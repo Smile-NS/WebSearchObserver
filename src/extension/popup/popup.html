@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1>パスワード入力</h1>
+    <p>Webの閲覧制限を解除するためのパスワードを入力してください。</p>
+    <div id="log_div"></div> 
+    <form id="form" action="#">
+      <input type="password" id="password_field">
+      <input type="password" name="dummy" style="display:none;">
+      <input type="button" id="send" value="認証">
+    </form>
+    <img src="icon.png" alt="icon" class="icon">
+    <script src="popup.js"></script>
+  </body>
+</html>

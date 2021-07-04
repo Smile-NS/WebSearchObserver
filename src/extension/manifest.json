@@ -1,0 +1,33 @@
+{
+    "name": "Web Search Observer",
+    "version": "1.0.0",
+    "author": "Smile_NS",
+    "manifest_version": 2,
+    "description": "When students try to access to a web page in time not to use their Chromebook, this extension reject to access.",
+    "permissions": [
+      "*://script.google.com/*",
+      "*://script.googleusercontent.com/*"
+    ],
+    "content_scripts": [{
+      "matches": ["*://*/*"],
+      "js": [
+        "js/content.js"
+      ]
+    }],
+    "background": {
+      "scripts": [
+        "js/jquery-3.6.0.min.js",
+        "js/background.js"
+      ],
+      "presistent": false
+    },
+    "icons": {
+      "128": "images/icon128.png",
+      "48": "images/icon48.png",
+      "16": "images/icon16.png"
+    },
+    "browser_action": {
+      "default_title": "WSObs",
+      "default_popup": "popup/popup.html"
+    }
+  }
