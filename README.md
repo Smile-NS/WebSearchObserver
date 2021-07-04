@@ -1,0 +1,2 @@
+# WebSearchObserver
+特定の時間内はWebページの閲覧を禁止するChrome拡張(GASと連携してスプレッドシートを参照する)
